@@ -1,27 +1,11 @@
-Rock Paper Scissor
+Order of Execution:
 
-Intially the users are asked to input the number of palyers participating in the game.
-Enter their name and choice
+code.py -> out_screen -> user_choice
 
-Example:
-
-Enter your name: abc
-Enter your choice: scissor
-
-The choice could Rock/ Paper/ Scissor
-
-This way all users are asked to enter their name and select their choice
-
-Upon selection, the winner is aanounced.
+The Idea is to build a game where a random word is choosen by one player and
+other player should guess the word.
 
 
-GAME:
-
-Consider that there are 3 players:
-
-Player1: rock
-Player2: rock
-Player3: scissor
-
-Thus, Rock can brake scissor.
-Player1 and Player 2 are the winners.
+-> All duplicates are placed according to their positions.
+-> Len(word)+2 chances are given to each player
+-> if the word is guessed within the chances, the player wins if not a message " Better luck next time" is shown. 
