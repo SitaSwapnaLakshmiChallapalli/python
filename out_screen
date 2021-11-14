@@ -1,0 +1,5 @@
+y=[l2.append('_') for i in range(len(n))]
+print(l2)
+if ' ' in l:
+    space_index=l.index(' ')
+    l2[space_index]=' '
