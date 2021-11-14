@@ -1,0 +1,43 @@
+players=int(input("enter number of players: "))
+d={}
+for i in range(players):
+    names=input("Please enter you name: ")
+    d[names]=input("enter your choice: ")
+name_list=list(d.keys())
+choice_list=list(d.values())
+if(choice_list.count(choice_list[0])==3):
+     print("play again")
+elif 'rock' in choice_list and 'paper' in choice_list and 'scissor' in choice_list:
+    print("scissor cuts paper and rock breaks scissors")
+    z='rock'
+    pos=choice_list.index(z)
+    #print('Rock Wins')
+    win=[j for j in d if d[j]== z]
+    for k in win:
+        print('{} wins!!!'.format(k))
+elif 'paper' in choice_list and 'scissor' in choice_list:
+    z='scissor'
+    pos=choice_list.index(z)
+    print('Scissor Wins')
+    win=[j for j in d if d[j]== z]
+    #print(win)
+    for k in win:
+        print('{} wins!!!'.format(k))
+elif 'rock' in choice_list and 'paper' in choice_list:
+    z='paper'
+    pos=choice_list.index(z)
+    #print('Paper Wins')
+    win=[j for j in d if d[j]== z]
+    #print(win)
+    for k in win:
+        print('{} wins!!!'.format(k))
+
+elif 'rock' in choice_list and 'scissor' in choice_list:
+    print("rock beats scissor and rock wins")
+    z='rock'
+    pos=choice_list.index(z)
+    #print('Rock Wins!!!')
+    win=[j for j in d if d[j]== z]
+    #print(win)
+    for k in win:
+        print('{} wins!!!'.format(k))
