@@ -1,0 +1,7 @@
+n=input("enter any word for computer:")
+#print(n)
+l=[]
+l2=[]
+l3=[]
+x=[l.append(i) for i in n]
+print(l)
